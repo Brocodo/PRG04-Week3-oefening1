@@ -3,10 +3,13 @@ class Ball {
     private div : HTMLElement;
     private posX : number;
     private posY : number;
-    private speedX : number;
-    private speedY : number;
+    public speedX : number;
+    public speedY : number;
+    public speed : number;
+    public rect : ClientRect;
     
     constructor() {
+
         // creeer een div element
         this.div = document.createElement("ball");
         document.body.appendChild(this.div);
@@ -17,8 +20,9 @@ class Ball {
         this.posY = (Math.random() * (window.innerHeight/2)) + (window.innerHeight/4);
         
         // start snelheid
-        this.speedX = Math.ceil(Math.random() * 7);
-        this.speedY = Math.ceil(Math.random() * 7);
+        this.speed = Math.ceil(Math.random() * 7)
+        this.speedX = this.speed * 3;
+        this.speedY = this.speed;
                 
         // plaatsen
         this.move();
@@ -26,6 +30,7 @@ class Ball {
     
     
     public move() : void {
+
         this.posX += this.speedX;
         this.posY += this.speedY;
         
@@ -40,6 +45,9 @@ class Ball {
         if (this.posY > window.innerHeight-40  || this.posY < 0){
             this.speedY = this.speedY * -1;
         }
+
+        // update rect 
+        this.rect = this.div.getBoundingClientRect();
         
         // transform gebruiken om de positie op het scherm aan te passen
         this.div.style.transform = "translate("+this.posX+"px, "+this.posY+"px)";
