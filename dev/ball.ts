@@ -17,8 +17,8 @@ class Ball {
         this.posY = (Math.random() * (window.innerHeight/2)) + (window.innerHeight/4);
         
         // start snelheid
-        this.speedX = Math.ceil(Math.random() * 5);
-        this.speedY = Math.ceil(Math.random() * 5);
+        this.speedX = Math.ceil(Math.random() * 7);
+        this.speedY = Math.ceil(Math.random() * 7);
                 
         // plaatsen
         this.move();
@@ -32,6 +32,14 @@ class Ball {
         // als we buiten beeld gaan dan de snelheid omdraaien
         // gebruik window.innerWidth en window.innerHeight om te zien of we nog in beeld zijn
         // let op dat de bal 40 pixels breed en hoog is
+
+        if (this.posX > window.innerWidth-40 || this.posX < 0){
+            this.speedX = this.speedX * -1;
+        }
+
+        if (this.posY > window.innerHeight-40  || this.posY < 0){
+            this.speedY = this.speedY * -1;
+        }
         
         // transform gebruiken om de positie op het scherm aan te passen
         this.div.style.transform = "translate("+this.posX+"px, "+this.posY+"px)";
