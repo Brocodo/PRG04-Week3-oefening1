@@ -13,7 +13,7 @@ Voor het startproject van Pong heb ik het onderstaande toegevoegd:
 - Twee paddles met eigen controls (2 spelers)
 
 ## game.ts
-In de game.ts bevind zich alle code gerelateerd tot de "game". Hierin staat o.a. de gameloop die elke frame zichzelf herhaalt.  Ook worden hier de game instances/objecten aangemaakt en worden bepaalde functies aangeroepen elke frame.
+*In de game.ts bevind zich alle code gerelateerd tot de "game". Hierin staat o.a. de gameloop die elke frame zichzelf herhaalt.  Ook worden hier de game instances/objecten aangemaakt en worden bepaalde functies aangeroepen elke frame.*
 
 #### declarations
 Ik gebruik een array object voor de balls, aangezien we meerdere ballen willen. Vervolgens maak ik 2 verschillende paddle elementen aan. Ik maak hier geen gebruik van een array, omdat ik weet dat er maar maximaal 2 paddle's in de game zullen zitten.
@@ -82,7 +82,7 @@ class Game {
 ```
 
 ## ball.ts
-In de ball.ts staat alle code gerelateerd tot de Ball objecten. De attributen en beweging word hierin geregelt.
+*In de ball.ts staat alle code gerelateerd tot de Ball objecten. De attributen en beweging word hierin geregelt.*
 
 #### declarations
 We gebruiken een HTMLElement die we uiteindelijk op het scherm laten zien. Ook moet de ball variabelen hebben om de positie bij te kunnen houden. Ik gebruik rect om de ClientRect (dimenties) van het object bij te kunnen houden.
@@ -152,7 +152,7 @@ class Ball {
 ```
 
 ## paddle.ts
-In de paddle.ts staat alle code gerelateerd tot de Paddle objecten. De attributen en beweging word hierin geregelt.
+*In de paddle.ts staat alle code gerelateerd tot de Paddle objecten. De attributen en beweging word hierin geregelt.*
 
 #### declarations
 In de declaratie van de variabelen doen we eigenlijk hetzelfde als de ball. Alleen gebruiken we een "id" variable om aan te geven om welke speler het gaat. We willen namelijk verschillende controls voor de 2 paddle's.
