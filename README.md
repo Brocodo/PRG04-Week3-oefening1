@@ -2,9 +2,7 @@
 
 ## Pong
 
-Startproject voor Pong in Typescript
-
-### Opdracht
+Voor het startproject van Pong kreeg ik de onderstaande opdrachten:
 
 - Maak een ball instance aan in game.ts
 - De game loop roept de move() functie van de ball aan
@@ -18,11 +16,9 @@ Startproject voor Pong in Typescript
 - Wat moet er gebeuren als een ball een paddle raakt?
 - Kan je twee paddles toevoegen die elk hun eigen keyboard controls hebben?
 
-### Voorbeeldcode
+### Ball instance
+Door 
 
-- Collision detection
-- Keyboard input
-- Game Loop
-- Callback scope
-
-[Voorbeeldcode](https://github.com/HR-CMGT/PRG04-Week3-examples)
+```typescript
+Test
+```
