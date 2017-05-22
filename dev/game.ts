@@ -16,7 +16,7 @@ class Game {
             this.balls.push(new Ball());
         }
 
-        // Maak paddle instnace aan
+        // Maak paddle instance aan
         this.paddle1 = new Paddle(1, 20, window.innerHeight/2);
         this.paddle2 = new Paddle(2, window.innerWidth-100, window.innerHeight/2);
            
