@@ -2,21 +2,17 @@
 
 ## Pong
 
-Voor het startproject van Pong kreeg ik de onderstaande opdrachten:
+Voor het startproject van Pong heb ik het onderstaande toegevoegd:
 
-- Maak een ball instance aan in game.ts
+- Ball instances in game.ts
 - De game loop roept de move() functie van de ball aan
-- Hoe weet de bal of hij uit het scherm gaat? Wat moet er dan gebeuren?
-- Laat 20 ballen over het scherm bewegen
-- Maak de paddle.ts class af
-- Bestudeer de [voorbeeldcode](https://github.com/HR-CMGT/PRG04-Week3-examples)
-- Voeg keyboard input toe aan de paddle.ts class
-- Maak een paddle instance aan in game.ts
-- Voeg in game.ts collision detection toe tussen de balls en de paddle
-- Wat moet er gebeuren als een ball een paddle raakt?
-- Kan je twee paddles toevoegen die elk hun eigen keyboard controls hebben?
+- De ball kan niet uit het scherm, en kaatst weg
+- Een paddle.ts class met keyboard controls
+- In game.ts collision detection tussen de balls en de paddle
+- Als de ball en paddle elkaar raken zal de ball wegkaatsen
+- Twee paddles met eigen controls (2 spelers)
 
-### game.ts
+## game.ts
 In de game.ts bevind zich alle code gerelateerd tot de "game". Hierin staat o.a. de gameloop die elke frame zichzelf herhaalt.  Ook worden hier de game instances/objecten aangemaakt en worden bepaalde functies aangeroepen elke frame.
 
 #### declarations
@@ -85,7 +81,7 @@ class Game {
 } 
 ```
 
-### ball.ts
+## ball.ts
 In de ball.ts staat alle code gerelateerd tot de Ball objecten. De attributen en beweging word hierin geregelt.
 
 #### declarations
@@ -155,7 +151,7 @@ class Ball {
 }
 ```
 
-### paddle.ts
+## paddle.ts
 In de paddle.ts staat alle code gerelateerd tot de Paddle objecten. De attributen en beweging word hierin geregelt.
 
 #### declarations
